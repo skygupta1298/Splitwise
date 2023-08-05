@@ -1,0 +1,27 @@
+User.java
+    Fields
+    - userId : Integer
+    - name : String
+    - email : String
+    - mobile : String
+    - Map<Integer,double> userBalance;
+    - List<Expense> expenseHistory;
+
+enum enums.ExpenseType
+- EQUAL, EXACT, PERCENT
+
+interface ExpenseSplitStrategy
+    - Methods
+    -> void splitExpense(Expense expense);
+
+EqualSplitStrategy
+
+ExactSplitStrategy
+
+PercentSplitStrategy
+
+SplitStrategyManager
+
+SplitWiseApp
+
+Runner
